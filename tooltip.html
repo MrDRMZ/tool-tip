@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Tooltip Options</h3>
+  <p>The <strong>placement</strong> option specifies the tooltip position.</p>
+  <div>
+    <button class="btn btn-warning btn-md">Top</button>
+    <button class="btn btn-success btn-md">Bottom</button>
+    <button class="btn btn-danger btn-md">Left</button>
+    <button class="btn btn-default btn-md">Right</button>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.btn-warning').tooltip({title: "Hooray", placement: "top"});
+    $('.btn-success').tooltip({title: "Hooray", placement: "bottom"});
+    $('.btn-danger').tooltip({title: "Hooray", placement: "left"});
+    $('.btn-default').tooltip({title: "Hooray", placement: "right"});
+});
+</script>
+
+</body>
+</html>
